@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 body {
     height: 300vh;
@@ -34,3 +35,13 @@ body {
     0.1vh 2.5vh 3.5vh rgba(0,156,207,0.2),
     0.1vh 3.0vh 6.0vh rgba(0,156,207,0.4);
 }
+=======
+.fade-in {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+
+.fade-in-appear {
+    opacity: 1;
+}
+>>>>>>> Stashed changes
