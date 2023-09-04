@@ -36,12 +36,23 @@ body {
 }
 .fade-in {
     opacity: 0;
-    transition: opacity 1000ms ease-in;
+    transition: opacity 500ms ease-in;
 }
 
 .test-pos {
+    background-color: #009ccf;
     margin-top: 800px;
 }
 .fade-in.appear {
     opacity: 1;
+}
+.Hfade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 500ms ease-in, transform 250ms ease-in;
+}
+
+.Hfade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
 }
