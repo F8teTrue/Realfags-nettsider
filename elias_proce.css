@@ -1,0 +1,60 @@
+
+
+.Farge{
+    color: red
+}
+
+body{
+    background-color: beige;
+
+
+}
+.mainContainer{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    overflow:hidden;
+    width: 100%;
+}
+.h1{
+    color:rgb(266, 266, 266);
+    text-transform: uppercase;
+    margin: 30px;
+}
+.box{
+    background-color: red;
+    color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 49.395vw;
+    height: 50vh;
+    transition: transform 1s ease;
+  
+}
+.boxSlideLeft{
+    transform: translateX(-400%);
+}
+    
+.boxSlideRight{
+    transform:translateX(400%)
+}
+.left{
+    width:100%;
+    display: flex;
+    justify-content: start;
+}
+.left:nth-of-type(even){
+   
+    justify-content: end;
+}
+
+
+.show{
+    transform:translateX(0);
+}
+.show:nth-of-type(even){
+    transform:translateX(0);
+}
