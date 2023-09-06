@@ -1,0 +1,12 @@
+body {
+    height: 300vh;
+    background-color: whitesmoke;
+
+}
+
+.center {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
