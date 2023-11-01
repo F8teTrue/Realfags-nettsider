@@ -5,15 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informasjonsteknologi</title>
     <link rel="stylesheet" href="itStyle.css">
+    <script src="itScript.js"></script>
+    <script src="gameScript.js"></script>
 </head>
 <body>
-    <div class="center">
+    <header>
+        <div class="container">
+            <div class="logoBox">
+                <img src="./bilder/logo.png" alt="Elvebakken logo">
+            </div>
+            <h1>Informasjonsteknologi</h1>
+        </div>
+    </header>
+    <section class="text-image-section">
+        <div class="text">
+            <h2 class ="Hfade-in">Oversikt over faget:</h2>
+            <p class ="fade-in">
+                I dette faget lærer du grunnleggende programmering i flere språk:<br>
+                - HTML<br>
+                - CSS<br>
+                - Javascript<br>
+                - PHP & MySQL<br>
+                Vi bygger nettsider for å kunne se et praktisk resultat av programmeringen vår.
+            </p>
+        </div>
+        <div class="image">
+            <img src="./bilder/picture.png" alt="Bilde 1">
+        </div>
+    </section>
 
+    <section class="text-image-section">
+        <div class="image">
+            <img src="./bilder/picture2.png" alt="Bilde 2">
+        </div>
+        <div class="text">
+            <h2 class ="Hfade-in">Velg dette faget hvis:</h2>
+            <ul class ="fade-in">
+                <li>Du ikke kan programmering fra før, men er interessert i å lære det fra bunnen av.</li>
+                <li>Du liker å sitte med laptopen, det blir ikke varierte arbeidsformer.</li>
+                <li>Du er kreativ og nøyaktig, med stor tålmodighet. Du kan tenke logisk, og liker å lære språk (gloser og gramatikk).</li>
+            </ul>
+        </div>
+    </section>
 
-    </div>
+    <section class="text-image-section">
+        <div class="text">
+            <h2 class ="Hfade-in">Viktig info:</h2>
+            <p class ="fade-in">
+                Eksamen: Muntlig-praktisk<br>
+                Timetall: 5 timer i uka<br>
+                <b>Krav: Ingen krav til forkunnskaper. Dette er et begynnerkurs i programmering.</b><br>
+                Les mer her: <a href="https://www.udir.no/lk20/inf01-02">https://www.udir.no/lk20/inf01-02</a>
+            </p>
+        </div>
+        <div class="image">
+            <img src="./bilder/picture3.png" alt="Bilde 3">
+        </div>
+    </section>
 
+    <section id="gameSection" class="text-image-section" style="height: 400px; display: flex; align-items: center; justify-content: space-around;">
+        <div id="div1">
+            <button id="playButton">Play</button>
+            
+        </div>
+        <div class="text">
+            <h2 class="Hfade-in">Eksempel på prosjekt:</h2>
+            <p class="fade-in">
+                Dette er et eksempel på et lite spill lagd med JavaScript.
+                På IT 1 vil du lære hvordan du kan lage spill som dette og mye mer!
+            </p>
+        </div>
+    </section>
+   
 
+    <script src="../observers.js"></script>
 </body>
-
-
 </html>
+
