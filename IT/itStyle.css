@@ -5,6 +5,10 @@ body {
     background-color: #bfbfbf;
 }
 
+.mainDiv {
+    width: 100vw;
+    height: 100vh;
+}
 header {
     background-image: url(./bilder/headerPicture.png);
     block-size: 400px; 
@@ -51,6 +55,10 @@ header h1 {
     background-color: #f0f0f0;
     margin: 20px;
     border-radius: 7px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .text-image-section:nth-child(even) {
@@ -142,23 +150,80 @@ h2, p {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    width: 700px;
+    width: 530px;
 }
 iframe {
     border: none;
 }
 @media (max-width: 768px) {
     header {
-        background-size: cover; /* Adjust background size for smaller screens */
+        background-size: cover;
+        text-align: center;
+    }
+
+    .logoBox {
+        margin-top: 170px;
+    }
+
+    header h1 {
+        margin-top: 170px;
+        font-size: 24px;
+    }
+    .text-image-section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .text, .image {
+        width: 100%;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .text h2 {
+        font-size: 24px;
+    }
+
+    .fade-in, .Hfade-in {
+        font-size: 18px;
     }
     #gameSection {
         display: none;
     }
-    .text-image-section {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+}
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header {
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
     }
 
-    .game-section {
-        width: 100%; /* Make the game section fill the screen width */
+    header h1 {
+        font-size: 20px;
+        margin-top: 5px;
+        font-size: 30px;
+    }
+
+    .logoBox {
+        margin-top: 10px;
+    }
+
+    .text h2 {
+        font-size: 20px;
+    }
+
+    .fade-in, .Hfade-in {
+        font-size: 16px;
+    }
+    #gameSection {
+        display: none;
     }
 }

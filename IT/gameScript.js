@@ -247,7 +247,15 @@ function tegn() {
 
 let spill = setInterval(tegn,10);
 
-addEventListener("keydown",hoppfunk);
+document.addEventListener('keydown', event => {
+    if (event.code === 'Space') {
+        hoppfunk()
+        console.log("uwu")
+    }
+});
+
+canvasEl.addEventListener('click', () => hoppfunk());
+
 
 function hoppfunk() {
     hopp = 4;
